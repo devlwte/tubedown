@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TubeDown | MP4</title>
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="/lib/icomoon/icomoon.css">
+  <link rel="stylesheet" href="/lib/faws/style.css">
+
+  <!-- Roboto -->
+  <link rel="stylesheet" href="/lib/roboto/roboto.css">
+
+  <!-- Materializecss -->
+  <link rel="stylesheet" href="/lib/materialize/css/materialize.min.css">
+
+  <!-- Menu -->
+  <link rel="stylesheet" href="/lib/css/menu-mz.css">
+
+  <!-- TubeDown -->
+  <link rel="stylesheet" href="/css/tube.css">
+
+</head>
+
+<body>
+
+  <!-- menu -->
+  <%- include('../include/menu.ejs') %>
+
+  <div class="body">
+    <!-- contenedor downloader -->
+    <div class="mp3_container elm_center_h">
+      <div class="form_downloader">
+        <h5 class="title_form">MP4 Downloader</h5>
+        <div class="input_container">
+          <div class="input_elm z-depth-1">
+            <div class="progress_input"></div>
+            <input type="text" id="getvideo" spellcheck="false" placeholder="https://www.youtube.com/watch?v=7hgLz6P-hF4&ab_channel=DevSFree">
+            <div class="btn_converte btn_mp4 icon-search"><%- include('../include/cargar_music.ejs') %></div>
+          </div>
+        </div>
+        <div class="data_audio">
+          <div class="info_view info_mp4">
+            <div class="progress_download_video">
+              <h5 class="title_mp4_downloader">...</h5>
+              <div class="progress" style="height: 7px;">
+                <div class="determinate blue pr_mp4" style="width: 0%"></div>
+                <div class="determinate teal pr_mp3" style="width: 0%"></div>
+                <div class="determinate purple pr_convert" style="width: 0%"></div>
+              </div>
+            </div>
+            <li><span>Titulo:</span> <span class="name_music">...</span></li>
+            <li><span>Autor:</span> <span class="author_music">...</span></li>
+            <li><span>Duracion:</span> <span class="duration_music">...</span></li>
+            <li><span>Vistas:</span> <span class="views_music">...</span></li>
+            <li><span>Url:</span> <span class="url_music">...</span></li>
+
+            <div class="formatos">
+              <h5>Formatos disponibles</h5>
+              <div class="tabla">
+                <div class="header-table">
+                  <div class="tbh">Formato</div>
+                  <div class="tbh">Calidad</div>
+                  <div class="tbh">FPS</div>
+                  <div class="tbh">Tamaño</div>
+                </div>
+                <div class="tset mp4_add_items">
+                  <div class="tbbody">
+                    <a href="#" class="tbb">video/mp4</a>
+                    <div class="tbb">1080p</div>
+                    <div class="tbb">25</div>
+                    <div class="tbb">67 MB</div>
+                  </div>
+                </div>
+              </div>
+              <div class="navegate">
+                <ul class="pagination" id="pagination_mp4"></ul>
+            </div>
+            </div>
+
+          </div>
+          
+
+        </div>
+        <div class="dcp_info">
+          Descarga tus vídeos favoritos totalmente gratis, TubeDown está en desarrollo por lo que es posible que encuentres algunos errores
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jquery -->
+  <script src="/lib/jQuery/jquery.module.js"></script>
+
+  <!-- materialize -->
+  <script src="/lib/materialize/js/materialize.min.js"></script>
+  <script src="/lib/materialize/js/init.js"></script>
+
+  <!-- pagination -->
+  <script src="/lib/paginations/pagination.min.js"></script>
+
+  <!-- saved -->
+  <script src="/lib/js/saved.js"></script>
+
+  <!-- util -->
+  <script src="/lib/js/codeutilkit.js"></script>
+
+  <!-- TubeDown -->
+  <script src="/js/tube.js"></script>
+
+</body>
+
+</html>

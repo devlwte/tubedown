@@ -1,0 +1,29 @@
+{
+  "name": "tubedown",
+  "title": "TubeDown",
+  "version": "1.0.0",
+  "server": {
+    "pathviews": "app/views",
+    "pathpublic": "app/public"
+  },
+  "description": "descarga tu música favorita gratis",
+  "tags": "YT, Music, Downloads, Download",
+  "main": "tubedown.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devlwte/tubedown.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "devlwte",
+  "license": "MIT",
+  "dependencies": {
+    "yt-get": "^1.1.2"
+  },
+  "webPreferences": {
+    "nodeIntegration": true,
+    "contextIsolation": false
+  }
+}
